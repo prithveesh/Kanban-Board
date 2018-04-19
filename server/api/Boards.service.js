@@ -46,6 +46,20 @@ class BoardsService {
         });
     }
 
+    deleteBoard() {
+        const timestamp = this.req.body.timestamp;
+        console.log('deleteboard', timestamp);
+        connectDb((db) => {
+            const collection = db.collection('boards');
+            collection.deleteOne({ timestamp: timestamp }, (err, result) => {
+                collection.find().toArray((err, result) => {
+                    if (err) throw err;
+                    this.callback(err, result);
+                });
+            });
+        });
+    }
+
     emptyBoards() {
         connectDb((db) => {
             const collection = db.collection('boards');

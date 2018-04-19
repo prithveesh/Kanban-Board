@@ -8,9 +8,18 @@ mat-card {
     mat-card-content {
         width: 100%;
     }
-    button {
+    .board {
         padding: 48px;
         width: 100%;
+    }
+
+    .delete {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
     }
         
 }

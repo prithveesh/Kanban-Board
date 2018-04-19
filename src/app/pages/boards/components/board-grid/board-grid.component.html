@@ -1,6 +1,6 @@
 <div class="grid-wrapper">
   <div class="grid">
-    <app-board-card class="tile" *ngFor="let item of boardList" [boardName]="item.name"></app-board-card>
+    <app-board-card class="tile" *ngFor="let item of boardList; trackBy: timestamp;" [board]="item" (deleteBoard)="deleteBoard($event)"></app-board-card>
     <app-board-new class="tile" [isLoading]="isLoading" (boardCreate)="addNewBoard($event)"></app-board-new>
   </div>
 </div>

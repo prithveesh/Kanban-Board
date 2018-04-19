@@ -1,7 +1,10 @@
 <mat-card mat-button>
     <mat-card-content>
-        <button mat-button (click)="openBoard()">
-            {{boardName}}
+        <button mat-button (click)="openBoard()" class="board">
+            {{board.name}}
+        </button>
+        <button class="delete" (click)="deleteBoard.emit(board)">
+            <img height="30px" src='../../../../../assets/delete.png'>
         </button>
     </mat-card-content>
 </mat-card>

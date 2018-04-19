@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-board-card',
@@ -7,15 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BoardCardComponent implements OnInit {
 
-  @Input() boardName: string;
+  @Input() board: string;
+  @Output() deleteBoard = new EventEmitter<{}>();
+
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.board);
   }
 
   openBoard() {
 
   }
-
 }

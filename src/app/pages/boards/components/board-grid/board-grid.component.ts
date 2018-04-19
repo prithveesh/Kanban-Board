@@ -27,4 +27,13 @@ export class BoardGridComponent implements OnInit {
       this.isLoading = false;
     });
   }
+
+  deleteBoard(board) {
+    this.dataService.deleteBoard({
+      timestamp: board.timestamp
+    }).subscribe((response: any) => {
+      this.boardList = response.data;
+      this.isLoading = false;
+    });
+  }
 }

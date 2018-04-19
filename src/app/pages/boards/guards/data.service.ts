@@ -20,4 +20,8 @@ export class DataService implements Resolve<Observable<{}>> {
     addBoard(board) {
         return this.httpService.postData(API.boards, board);
     }
+
+    deleteBoard(timestamp) {
+        return this.httpService.postData(API.boardsDelete, timestamp);
+    }
 }
