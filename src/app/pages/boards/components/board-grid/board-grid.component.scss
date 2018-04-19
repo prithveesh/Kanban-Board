@@ -1,0 +1,17 @@
+.grid {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.tile {
+    display: flex;
+    margin: 20px;
+    min-height: 133px;
+    min-width: 267px;
+    justify-content: center;
+    align-items: normal;
+    align-self: flex-start;
+}
