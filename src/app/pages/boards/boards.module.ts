@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -17,7 +16,6 @@ import { BoardNewComponent } from './components/board-new/board-new.component';
   imports: [
     CommonModule,
     FormsModule,
-    MatGridListModule,
     MatCardModule,
     MatButtonModule,
     MatFormFieldModule,

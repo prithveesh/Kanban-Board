@@ -8,13 +8,13 @@
 <mat-card mat-button *ngIf="!isLoading && !isNew" class="edit">
   <form (ngSubmit)="createNew($event)" #boardForm>
     <mat-card-content>
-      <mat-form-field class="example-full-width">
+      <mat-form-field>
         <input matInput autofocus placeholder="Enter Board Name" name="newBoard" [(ngModel)]="newBoard" autocomplete="off" required>
       </mat-form-field>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button type="submit">Create New Board</button>
-      <button mat-button (click)="cancel()">Cancel</button>
+      <button mat-button (click)="reset()">Cancel</button>
     </mat-card-actions>
   </form>
 </mat-card>

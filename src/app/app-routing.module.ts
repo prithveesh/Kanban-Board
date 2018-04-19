@@ -6,6 +6,10 @@ const routes: Routes = [
     path: 'boards',
     loadChildren: 'app/pages/boards/boards.module#BoardsModule',
   },
+  {
+    path: 'tasks',
+    loadChildren: 'app/pages/tasks/tasks.module#TasksModule',
+  },
   { path: '', redirectTo: '/boards', pathMatch: 'full' },
 ];
 

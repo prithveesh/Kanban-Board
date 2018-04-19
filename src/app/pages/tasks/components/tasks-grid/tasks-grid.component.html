@@ -1,0 +1,9 @@
+<div class="grid-wrapper">
+  <div class="grid">
+    <mat-card class="tile" *ngFor="let item of tasks; trackBy: timestamp;">
+      <mat-card-content>
+        <app-tasks-list [list]="item.list"></app-tasks-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

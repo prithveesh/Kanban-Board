@@ -1,0 +1,6 @@
+<mat-selection-list>
+  <mat-list-option *ngFor="let task of list" [selected]="task.status">
+    {{task.name}}
+  </mat-list-option>
+</mat-selection-list>
+<app-tasks-new-task (addNewTask)="addNewTask($event)"></app-tasks-new-task>

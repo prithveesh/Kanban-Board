@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit()" #taskForm>
+  <mat-form-field>
+    <input matInput autofocus placeholder="Enter New Task" name="newTask" [(ngModel)]="newTask" autocomplete="off" required>
+  </mat-form-field>
+</form>
