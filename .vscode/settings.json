@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "git.confirmSync": false,
+  "window.zoomLevel": 0,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "explorer.confirmDragAndDrop": false,
+  "javascript.validate.enable": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "problems.decorations.enabled": false,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+}
