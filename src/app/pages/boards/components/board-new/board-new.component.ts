@@ -22,13 +22,13 @@ export class BoardNewComponent implements OnInit {
     this.isNew = false;
   }
 
-  cancel() {
+  reset() {
     this.isNew = true;
     this.form.nativeElement.reset();
   }
 
   createNew(event) {
     this.boardCreate.emit(this.newBoard);
-    this.cancel();
+    this.reset();
   }
 }
